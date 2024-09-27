@@ -70,7 +70,7 @@ Despliegue
 Para pruebas: GitHub Pages.
 Para producción: Servicios como Railway o Netlify.
 
-https://carrebola.github.io/vanillaPill/assets/images/image-11-de7ef12dc76ee6bfa5555269933be7cb.png
+![Alt-Text](https://carrebola.github.io/vanillaPill/assets/images/image-11-de7ef12dc76ee6bfa5555269933be7cb.png)
 
 
 
