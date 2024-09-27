@@ -1,4 +1,4 @@
-Escenario del proyecto
+## Escenario del proyecto
 Vanilla Games S.L. es una empresa que desarrolla minijuegos para navegadores web utilizando exclusivamente vanillaJS (Javascript puro, sin frameworks). La empresa cuenta con 10 desarrolladores y suele tener 3 alumnos en prácticas, de los cuales uno tiene muchas posibilidades de integrarse en el equipo al finalizar su formación.
 
 La empresa sigue un método de trabajo en el que cada miembro del equipo propone un minijuego, el cual es valorado por sus compañeros. Un equipo responsable selecciona los proyectos con mayor potencial para ser desarrollados por todo el equipo y comercializados posteriormente. Hasta ahora, usaban herramientas ofimáticas para gestionar comentarios y valoraciones, pero planean crear una aplicación web tipo intranet para facilitar este proceso.
@@ -74,7 +74,7 @@ Para producción: Servicios como Railway o Netlify.
 
 
 
-Casos de uso específicos y diagramas de flujo.
+## Casos de uso específicos y diagramas de flujo.
 En el primer apartado 'Requisitos y diagrama de casos de uso' para esta versión 1.0, hemos definido de manera general los casos de uso que se contemplan para cada actor y los hemos reflejado en un diagrama de casos de uso.
 
 Es el momento de ser más concretos y detenernos a reflexionar en cada uno de los procesos que se realizarán para cada tarea, incluyendo los posibles errores cometidos por el usuario o el propio sistema.
