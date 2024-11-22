@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
@@ -37,7 +37,7 @@
             }
         </style>
     </head>
-    <body class="pt-5" style="overflow-x: hidden; padding-bottom: 100px">       
+    <body class="pt-5" style="overflow-x: hidden; padding-bottom: 100px">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div class="container">
@@ -80,63 +80,121 @@
                                 <a class="nav-link active" aria-current="page" href="#">PROYECTOS</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src=".images/avatar.svg" alt="" width="25">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img src=".images/avatar.svg" alt="" width="25" />
                                 </a>
-                                <ul class="dropdown-menu me-0" style="left: -100px; width: 100px;">
+                                <ul class="dropdown-menu me-0" style="left: -100px; width: 100px">
                                     <li class="text-light text-center p-2">
                                         <p>user@email.com</p>
                                     </li>
-                                    <li><hr class="dropdown-divider"></li>
+                                    <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="#">Acciónn</a></li>
                                     <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                                    <li><hr class="dropdown-divider"></li>
+                                    <li><hr class="dropdown-divider" /></li>
                                     <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
                                 </ul>
                             </li>
-                            
                         </ul>
-                        
                     </div>
                 </div>
             </nav>
         </header>
         <main>
             <div class="container">
-                <h1 class="mt-5">Detalle del proyecto</h1>
+                <h1 class="mt-5">Edición de proyecto</h1>
                 <div class="d-flex justify-content-end">
                     <bottom class="btn btn-outline-secondary mt-5">
-                        <i class="bi bi-arrow-bar-left" style="font-size: 1em;"></i>
-                        Volver</bottom>
-                </div>
-                
-                <div class="row mt-2">
-                    <div class="col-12 col-md-4 mb-3">
-                        <img src=".images/juego.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <p>
-                            <p><strong>Nombre: </strong><span id="nombre">TETRIS</span></p>
-                            <p><strong>Descripción: </strong><span id="nombre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dicta iste debitis recusandae perspiciatis quae. Eius impedit saepe autem velit voluptate, odio sequi expedita nisi est molestiae quo quisquam!</span></p>
-                            <p><strong>Estado: </strong><span id="nombre">Estado</span></p>
-                            <p><strong>Fecha: </strong><span id="nombre">12/12/2023</span></p>
-                            <p><strong>Enlace: </strong><span id="nombre">http://www.enlaceapp.com</span></p>
-                            <p><strong>Repositorio: </strong><span id="nombre">carrebola.github.com/123456</span></p>
-                        </p>
-                    </div>
-                </div>
-                <div
-                    class="container fixed-bottom d-flex justify-content-end"
-                    style="padding: 0px 0px 100px 0px"
-                >
-                    <button
-                        class="btn btn-success rounded-circle fs-3 shadow"
-                        style="width: 50px"
+                        <i class="bi bi-arrow-bar-left" style="font-size: 1em"></i>
+                        Volver</bottom
                     >
-                        <i class="bi bi-pencil"></i>
-                    </button>
                 </div>
-                
+                <form action="" class="">
+                    <div class="row mt-2">
+                        <div class="col-12 col-md-4 pt-2 mb-3">
+                            <img src=".images/juego.jpg" alt="" class="img-fluid" />
+                            <label class="form-label mt-2" for="urlImagen"
+                                ><strong>URL imagen: </strong></label
+                            >
+                            <input
+                                id="urlImagen"
+                                type="text"
+                                class="form-control"
+                                value="http://enlaceImagen.com"
+                            />
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <!-- Formulario nuevo proyecto -->
+
+                            <!-- Nombre proyecto -->
+                            <label class="form-label" for="nombre"><strong>Nombre: </strong></label>
+                            <input
+                                required
+                                id="nombre"
+                                type="text"
+                                value="Nombre Autor"
+                                class="form-control"
+                            />
+
+                            <!-- Descripción -->
+                            <label class="form-label mt-2" for="descripcion"
+                                ><strong>Descripción: </strong></label
+                            >
+                            <textarea id="descripcion" class="form-control" rows="4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sunt? Recusandae labore at voluptatem tempore incidunt distinctio eaque? Est aspernatur laudantium itaque ullam numquam autem dolor quia amet eum consectetur.</textarea
+                            >
+
+                            <!-- Estado -->
+                            <label class="form-label mt-2" for="estado"
+                                ><strong>Estado: </strong></label
+                            >
+                            <select required id="estado" class="form-control">
+                                <option value="estado">estado</option>
+                                <option value="otro estado">otro estado</option>
+                            </select>
+
+                            <!-- Fecha -->
+                            <label class="form-label mt-2" for="fecha"
+                                ><strong>Fecha: </strong></label
+                            >
+                            <input id="fecha" type="date" class="form-control" value="12/12/2023" />
+
+                            <!-- Enlace al proyecto -->
+                            <label class="form-label mt-2" for="enlace"
+                                ><strong>Enlace: </strong></label
+                            >
+                            <input
+                                id="enlace"
+                                type="url"
+                                class="form-control"
+                                value="http://enlace.com"
+                            />
+
+                            <!-- Repositorio -->
+                            <label class="form-label mt-2" for="repositorio"
+                                ><strong>Repositorio: </strong></label
+                            >
+                            <input
+                                id="repositorio"
+                                type="text"
+                                class="form-control"
+                                value="user.github.com/123456"
+                            />
+
+                            <!-- Submit -->
+                            <input
+                                type="submit"
+                                class="btn btn-success mt-3"
+                                value="Subir proyecto"
+                            />
+                        </div>
+                    </div>
+                </form>
             </div>
         </main>
         <footer class="">
